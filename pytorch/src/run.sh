@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ###
 
 #python train.py --gpu_id 6 --source amazon --target webcam --loss_name JAN --tradeoff 1.0 --using_bottleneck 1 

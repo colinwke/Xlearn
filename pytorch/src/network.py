@@ -22,7 +22,7 @@ class AlexNetFc(nn.Module):
     model_alexnet = models.alexnet(pretrained=True)
     self.features = model_alexnet.features
     self.classifier = nn.Sequential()
-    for i in xrange(6):
+    for i in range(6):
       self.classifier.add_module("classifier"+str(i), model_alexnet.classifier[i])
     self.__in_features = model_alexnet.classifier[6].in_features
   
